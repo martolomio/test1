@@ -1,4 +1,6 @@
-package testservelet;
+package domain;
+
+import java.util.Objects;
 
 public class User {
 	private int id;
@@ -74,6 +76,19 @@ public class User {
 
 	public void setId(int id) {
 		this.id = id;
+	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+		User user = (User) o;
+		return id == user.id && Objects.equals(firstName, user.firstName) && Objects.equals(lastName, user.lastName) && Objects.equals(email, user.email) && Objects.equals(password, user.password) && Objects.equals(access, user.access);
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(id, firstName, lastName, email, password, access);
 	}
 
 	@Override
