@@ -8,6 +8,6 @@
 <title>Cabinet</title>
 </head>
 <body>
-<h1>Welcome to the cabinet ${userName} </h1>
+<h1>Welcome to the cabinet </h1>
 </body>
 </html>

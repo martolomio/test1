@@ -11,16 +11,17 @@
 	<jsp:include page="header.jsp"></jsp:include>
 
 	<form action="ServletLogin" method="post">
-	
-		<%--@declare id="login"--%><%--@declare id="password"--%>
-			<label for="login">Login :</label> <input name="login">
-			<br>	
-		<label for="password">Password : </label> <input name="password">
-			<br>
-		<input type="submit" value="submit">
-		<input name="login" type="text" placeholder="Login">
+		<input name= "login" type= "text" placeholder="Email">
+		<br>
+		<br>
+		<input name = "password" type= "text" placeholder="Password">
+		<br>
+		<br>
+		<input type = "submit" value="Enter">
+
 	</form>
 
 	<jsp:include page="footer.jsp"></jsp:include>
+
 </body>
 </html>

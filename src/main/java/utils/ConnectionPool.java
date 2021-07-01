@@ -1,4 +1,4 @@
-package testservelet;
+package utils;
 
 import javax.naming.Context;
 import javax.naming.InitialContext;
